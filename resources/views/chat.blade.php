@@ -12,9 +12,22 @@
     
     <div class="container" id="app">
         <div class="row">
-            <div class="bg-primary">
-                <h1>Start Chat</h1>
-            </div>
+                <ul class="list-group col-md-4 offset-md-4">
+                        <li class="list-group-item active">
+                            <h1>
+                                Start Chat User
+                            </h1>
+                        </li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+
+                        <div class="form-group mt-1">
+                            <input type="text" class="form-control" placeholder="Write Here...">
+                        </div>
+                </ul>
         </div>
     </div>
 
