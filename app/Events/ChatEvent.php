@@ -23,7 +23,8 @@ class ChatEvent
      */
     public function __construct($message, User $user)
     {
-        
+        return $this->message = $message;
+        return $user->user = $user;
     }
 
     /**
@@ -33,6 +34,6 @@ class ChatEvent
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('channel-name');
+        return new PrivateChannel('our_chat');
     }
 }
