@@ -30,7 +30,7 @@
                             {{-- component --}}
                             <message-chat 
                                 v-for="(value, index) in chat.message" :key="index"
-                                color="secondary">
+                                color="success">
                                     @{{value}}
                             </message-chat>
                             {{-- component --}}
