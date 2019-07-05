@@ -59641,7 +59641,7 @@ window.Pusher = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/d
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]((_ref = {
   broadcaster: 'pusher',
   key: ""
-}, _defineProperty(_ref, "key", 'cd6d8e203e0fc64f830d'), _defineProperty(_ref, "cluster", "mt1"), _defineProperty(_ref, "cluster", 'eu'), _defineProperty(_ref, "encrypted", true), _ref));
+}, _defineProperty(_ref, "key", 'cd6d8e203e0fc64f830d'), _defineProperty(_ref, "cluster", "mt1"), _defineProperty(_ref, "cluster", 'eu'), _defineProperty(_ref, "forceTLS", true), _ref));
 
 /***/ }),
 

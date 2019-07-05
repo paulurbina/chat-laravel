@@ -53,5 +53,6 @@ window.Echo = new Echo({
     key: 'cd6d8e203e0fc64f830d',
     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
     cluster: 'eu',
-    encrypted: true
+    // encrypted: true
+    forceTLS: true
 });
