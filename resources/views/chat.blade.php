@@ -7,27 +7,38 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>ChatLara</title>
+    <style rel="stylesheet">
+        ul.messageSending {
+            overflow-y: scroll;
+            width: 100%;
+            height: 210px; 
+        }
+    </style>
 </head>
 <body>
     
     <div class="container" id="app">
         <div class="row">
-                <ul class="list-group col-md-4 offset-md-4">
-                        <li class="list-group-item active">
+            <div class="col-md-4 offset-md-4">
+                    <li class="list-group-item active">
                             <h1>
                                 Start Chat User
                             </h1>
-                        </li>
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-
-                        <div class="form-group mt-1">
-                            <input type="text" class="form-control" placeholder="Write Here...">
-                        </div>
-                </ul>
+                    </li>
+                    <ul class="list-group messageSending">
+                           
+                            {{-- component --}}
+                            <message-chat v-for="(value, index) in chat.message" :key="index">
+                                @{{value}}
+                            </message-chat>
+                            {{-- component --}}
+                            
+                    </ul>
+                    <div class="form-group mt-1">
+                            <input type="text" class="form-control" placeholder="Write Here..." v-model="message" @keyup.enter="sending">
+                    </div>
+            </div>
+                
         </div>
     </div>
 
