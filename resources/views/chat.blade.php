@@ -25,11 +25,13 @@
                                 Start Chat User
                             </h1>
                     </li>
-                    <ul class="list-group messageSending">
+                    <ul class="list-group messageSending" v-chat-scroll>
                            
                             {{-- component --}}
-                            <message-chat v-for="(value, index) in chat.message" :key="index">
-                                @{{value}}
+                            <message-chat 
+                                v-for="(value, index) in chat.message" :key="index"
+                                color="secondary">
+                                    @{{value}}
                             </message-chat>
                             {{-- component --}}
                             
